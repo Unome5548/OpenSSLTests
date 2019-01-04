@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:C_Code_TestApp.xcodeproj">
+      location = "self:/Users/michaelpatterson/Documents/OpenSSL/C_Code_TestApp2/OpenSSL_TestApp.xcodeproj">
    </FileRef>
 </Workspace>

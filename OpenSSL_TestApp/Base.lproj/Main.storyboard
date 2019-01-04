@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="C_Code_TestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Factorial Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LvR-Vp-m1Q">
+                                <rect key="frame" x="47" y="82" width="281" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="Tms-ia-Pdr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JTi-aa-VSq">
+                                <rect key="frame" x="94" y="163" width="187.5" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVE-pC-jdp">
+                                <rect key="frame" x="303" y="163" width="30" height="30"/>
+                                <state key="normal" title="Go"/>
+                                <connections>
+                                    <action selector="factorialGoButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Grf-xQ-oOo"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JYy-28-WfZ">
+                                <rect key="frame" x="67.5" y="233" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.98961033938462251" green="0.98961033938462251" blue="0.98961033938462251" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="AqA-rV-qaX"/>
+                                    <constraint firstAttribute="width" constant="240" id="XyU-x0-Flb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EVE-pC-jdp" firstAttribute="centerY" secondItem="JTi-aa-VSq" secondAttribute="centerY" id="8I3-sy-1xZ"/>
+                            <constraint firstItem="JYy-28-WfZ" firstAttribute="top" secondItem="JTi-aa-VSq" secondAttribute="bottom" constant="40" id="FdB-xi-Vcm"/>
+                            <constraint firstItem="LvR-Vp-m1Q" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.75" id="Hjp-xT-oNb"/>
+                            <constraint firstItem="LvR-Vp-m1Q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="62" id="Kwh-aa-lLF"/>
+                            <constraint firstItem="JTi-aa-VSq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="L0d-gv-3vy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="EVE-pC-jdp" secondAttribute="trailing" symbolic="YES" id="URW-AI-bBj"/>
+                            <constraint firstItem="JYy-28-WfZ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="VpH-PF-o9O"/>
+                            <constraint firstItem="JTi-aa-VSq" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="fhm-Mf-TS7"/>
+                            <constraint firstItem="EVE-pC-jdp" firstAttribute="leading" secondItem="JTi-aa-VSq" secondAttribute="trailing" constant="21.5" id="gjH-lJ-oRQ"/>
+                            <constraint firstItem="LvR-Vp-m1Q" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="mjM-El-PTB"/>
+                            <constraint firstItem="JTi-aa-VSq" firstAttribute="top" secondItem="LvR-Vp-m1Q" secondAttribute="bottom" constant="26" id="sab-CO-Db2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="factorialGoButton" destination="EVE-pC-jdp" id="MuG-pV-6pb"/>
+                        <outlet property="factorialResultField" destination="JYy-28-WfZ" id="6oF-SY-Ctt"/>
+                        <outlet property="factorialTextField" destination="JTi-aa-VSq" id="87N-QA-f9h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>

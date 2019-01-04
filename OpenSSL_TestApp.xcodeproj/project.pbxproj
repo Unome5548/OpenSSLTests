@@ -7,21 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		518BF66EF4BE5AE839745FE1 /* Pods_OpenSSL_TestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DC33B0FDBD2964FE2222046 /* Pods_OpenSSL_TestApp.framework */; };
 		C6ADF00421DD638000E15114 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6ADF00321DD638000E15114 /* AppDelegate.swift */; };
 		C6ADF00621DD638000E15114 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6ADF00521DD638000E15114 /* ViewController.swift */; };
 		C6ADF00921DD638000E15114 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6ADF00721DD638000E15114 /* Main.storyboard */; };
 		C6ADF00B21DD638200E15114 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6ADF00A21DD638200E15114 /* Assets.xcassets */; };
 		C6ADF00E21DD638200E15114 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6ADF00C21DD638200E15114 /* LaunchScreen.storyboard */; };
+		C6ADF01821DD641900E15114 /* factorial.c in Sources */ = {isa = PBXBuildFile; fileRef = C6ADF01721DD641900E15114 /* factorial.c */; };
+		C6B6EF9221DEAE9000973745 /* OpenSSLWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B6EF9121DEAE9000973745 /* OpenSSLWrapper.m */; };
+		C6B6EF9421DECD5200973745 /* TestCert.txt in Resources */ = {isa = PBXBuildFile; fileRef = C6B6EF9321DECD5200973745 /* TestCert.txt */; };
+		C6B6EF9721DED18200973745 /* pkcs7_union_accessors.c in Sources */ = {isa = PBXBuildFile; fileRef = C6B6EF9621DED18200973745 /* pkcs7_union_accessors.c */; };
+		C6B6EF9921DFC71D00973745 /* CertificateTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B6EF9821DFC71D00973745 /* CertificateTools.swift */; };
+		C6B6EF9B21DFC7DE00973745 /* CertificateToolsError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B6EF9A21DFC7DE00973745 /* CertificateToolsError.swift */; };
+		C6B6EF9E21DFCCDD00973745 /* FileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B6EF9D21DFCCDD00973745 /* FileLoader.swift */; };
+		C6B6EF9F21DFD17E00973745 /* AppleIncRootCertificate.cer in Resources */ = {isa = PBXBuildFile; fileRef = C6B6EF9C21DFCC5600973745 /* AppleIncRootCertificate.cer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C6ADF00021DD638000E15114 /* C_Code_TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = C_Code_TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DC513FFCD3A8006DE622E7F /* Pods-OpenSSL_TestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenSSL_TestApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpenSSL_TestApp/Pods-OpenSSL_TestApp.release.xcconfig"; sourceTree = "<group>"; };
+		2FDB53338AF2C2B7361D2D9F /* Pods-OpenSSL_TestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenSSL_TestApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenSSL_TestApp/Pods-OpenSSL_TestApp.debug.xcconfig"; sourceTree = "<group>"; };
+		7DC33B0FDBD2964FE2222046 /* Pods_OpenSSL_TestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenSSL_TestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6ADF00021DD638000E15114 /* OpenSSL_TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenSSL_TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6ADF00321DD638000E15114 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6ADF00521DD638000E15114 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C6ADF00821DD638000E15114 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C6ADF00A21DD638200E15114 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6ADF00D21DD638200E15114 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6ADF00F21DD638200E15114 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6ADF01521DD641800E15114 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		C6ADF01621DD641900E15114 /* factorial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = factorial.h; sourceTree = "<group>"; };
+		C6ADF01721DD641900E15114 /* factorial.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = factorial.c; sourceTree = "<group>"; };
+		C6B6EF9121DEAE9000973745 /* OpenSSLWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenSSLWrapper.m; sourceTree = "<group>"; };
+		C6B6EF9321DECD5200973745 /* TestCert.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestCert.txt; sourceTree = "<group>"; };
+		C6B6EF9521DED15C00973745 /* pkcs7_union_accessors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pkcs7_union_accessors.h; sourceTree = "<group>"; };
+		C6B6EF9621DED18200973745 /* pkcs7_union_accessors.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pkcs7_union_accessors.c; sourceTree = "<group>"; };
+		C6B6EF9821DFC71D00973745 /* CertificateTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateTools.swift; sourceTree = "<group>"; };
+		C6B6EF9A21DFC7DE00973745 /* CertificateToolsError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateToolsError.swift; sourceTree = "<group>"; };
+		C6B6EF9C21DFCC5600973745 /* AppleIncRootCertificate.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = AppleIncRootCertificate.cer; sourceTree = "<group>"; };
+		C6B6EF9D21DFCCDD00973745 /* FileLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,48 +52,80 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				518BF66EF4BE5AE839745FE1 /* Pods_OpenSSL_TestApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F389D04B83CF6FEF8D1B064 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7DC33B0FDBD2964FE2222046 /* Pods_OpenSSL_TestApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C12073E830A9762F38109835 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2FDB53338AF2C2B7361D2D9F /* Pods-OpenSSL_TestApp.debug.xcconfig */,
+				0DC513FFCD3A8006DE622E7F /* Pods-OpenSSL_TestApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C6ADEFF721DD638000E15114 = {
 			isa = PBXGroup;
 			children = (
-				C6ADF00221DD638000E15114 /* C_Code_TestApp */,
+				C6ADF00221DD638000E15114 /* OpenSSL_TestApp */,
 				C6ADF00121DD638000E15114 /* Products */,
+				C12073E830A9762F38109835 /* Pods */,
+				1F389D04B83CF6FEF8D1B064 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		C6ADF00121DD638000E15114 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C6ADF00021DD638000E15114 /* C_Code_TestApp.app */,
+				C6ADF00021DD638000E15114 /* OpenSSL_TestApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C6ADF00221DD638000E15114 /* C_Code_TestApp */ = {
+		C6ADF00221DD638000E15114 /* OpenSSL_TestApp */ = {
 			isa = PBXGroup;
 			children = (
+				C6B6EF9C21DFCC5600973745 /* AppleIncRootCertificate.cer */,
+				C6B6EF9321DECD5200973745 /* TestCert.txt */,
 				C6ADF00321DD638000E15114 /* AppDelegate.swift */,
 				C6ADF00521DD638000E15114 /* ViewController.swift */,
 				C6ADF00721DD638000E15114 /* Main.storyboard */,
 				C6ADF00A21DD638200E15114 /* Assets.xcassets */,
 				C6ADF00C21DD638200E15114 /* LaunchScreen.storyboard */,
 				C6ADF00F21DD638200E15114 /* Info.plist */,
+				C6ADF01621DD641900E15114 /* factorial.h */,
+				C6ADF01721DD641900E15114 /* factorial.c */,
+				C6ADF01521DD641800E15114 /* Bridging-Header.h */,
+				C6B6EF9121DEAE9000973745 /* OpenSSLWrapper.m */,
+				C6B6EF9521DED15C00973745 /* pkcs7_union_accessors.h */,
+				C6B6EF9621DED18200973745 /* pkcs7_union_accessors.c */,
+				C6B6EF9821DFC71D00973745 /* CertificateTools.swift */,
+				C6B6EF9A21DFC7DE00973745 /* CertificateToolsError.swift */,
+				C6B6EF9D21DFCCDD00973745 /* FileLoader.swift */,
 			);
-			path = C_Code_TestApp;
+			path = OpenSSL_TestApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C6ADEFFF21DD638000E15114 /* C_Code_TestApp */ = {
+		C6ADEFFF21DD638000E15114 /* OpenSSL_TestApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C6ADF01221DD638200E15114 /* Build configuration list for PBXNativeTarget "C_Code_TestApp" */;
+			buildConfigurationList = C6ADF01221DD638200E15114 /* Build configuration list for PBXNativeTarget "OpenSSL_TestApp" */;
 			buildPhases = (
+				F4741B134BF60AF5EB99BFB1 /* [CP] Check Pods Manifest.lock */,
 				C6ADEFFC21DD638000E15114 /* Sources */,
 				C6ADEFFD21DD638000E15114 /* Frameworks */,
 				C6ADEFFE21DD638000E15114 /* Resources */,
@@ -79,9 +134,9 @@
 			);
 			dependencies = (
 			);
-			name = C_Code_TestApp;
+			name = OpenSSL_TestApp;
 			productName = C_Code_TestApp;
-			productReference = C6ADF00021DD638000E15114 /* C_Code_TestApp.app */;
+			productReference = C6ADF00021DD638000E15114 /* OpenSSL_TestApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -96,10 +151,11 @@
 				TargetAttributes = {
 					C6ADEFFF21DD638000E15114 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
-			buildConfigurationList = C6ADEFFB21DD638000E15114 /* Build configuration list for PBXProject "C_Code_TestApp" */;
+			buildConfigurationList = C6ADEFFB21DD638000E15114 /* Build configuration list for PBXProject "OpenSSL_TestApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,7 +168,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C6ADEFFF21DD638000E15114 /* C_Code_TestApp */,
+				C6ADEFFF21DD638000E15114 /* OpenSSL_TestApp */,
 			);
 		};
 /* End PBXProject section */
@@ -124,18 +180,51 @@
 			files = (
 				C6ADF00E21DD638200E15114 /* LaunchScreen.storyboard in Resources */,
 				C6ADF00B21DD638200E15114 /* Assets.xcassets in Resources */,
+				C6B6EF9421DECD5200973745 /* TestCert.txt in Resources */,
+				C6B6EF9F21DFD17E00973745 /* AppleIncRootCertificate.cer in Resources */,
 				C6ADF00921DD638000E15114 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F4741B134BF60AF5EB99BFB1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenSSL_TestApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C6ADEFFC21DD638000E15114 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6B6EF9221DEAE9000973745 /* OpenSSLWrapper.m in Sources */,
 				C6ADF00621DD638000E15114 /* ViewController.swift in Sources */,
+				C6B6EF9E21DFCCDD00973745 /* FileLoader.swift in Sources */,
+				C6ADF01821DD641900E15114 /* factorial.c in Sources */,
+				C6B6EF9721DED18200973745 /* pkcs7_union_accessors.c in Sources */,
+				C6B6EF9921DFC71D00973745 /* CertificateTools.swift in Sources */,
+				C6B6EF9B21DFC7DE00973745 /* CertificateToolsError.swift in Sources */,
 				C6ADF00421DD638000E15114 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,16 +369,21 @@
 		};
 		C6ADF01321DD638200E15114 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FDB53338AF2C2B7361D2D9F /* Pods-OpenSSL_TestApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = C_Code_TestApp/Info.plist;
+				DEVELOPMENT_TEAM = 3EG9RQ78Z9;
+				INFOPLIST_FILE = OpenSSL_TestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Microsoft.ResourceAccess.C-Code-TestApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OpenSSL_TestApp/Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -297,16 +391,20 @@
 		};
 		C6ADF01421DD638200E15114 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DC513FFCD3A8006DE622E7F /* Pods-OpenSSL_TestApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = C_Code_TestApp/Info.plist;
+				DEVELOPMENT_TEAM = 3EG9RQ78Z9;
+				INFOPLIST_FILE = OpenSSL_TestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Microsoft.ResourceAccess.C-Code-TestApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OpenSSL_TestApp/Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -315,7 +413,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C6ADEFFB21DD638000E15114 /* Build configuration list for PBXProject "C_Code_TestApp" */ = {
+		C6ADEFFB21DD638000E15114 /* Build configuration list for PBXProject "OpenSSL_TestApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C6ADF01021DD638200E15114 /* Debug */,
@@ -324,7 +422,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C6ADF01221DD638200E15114 /* Build configuration list for PBXNativeTarget "C_Code_TestApp" */ = {
+		C6ADF01221DD638200E15114 /* Build configuration list for PBXNativeTarget "OpenSSL_TestApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C6ADF01321DD638200E15114 /* Debug */,
